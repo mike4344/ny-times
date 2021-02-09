@@ -43,11 +43,89 @@ hr {
 
 /* Main Grid Styles */
 
+/* Main Grid Styles */
 
+.grid__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr /* Make the first column 2x wide as the second. */ ;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "head1 head1"
+  "main1 sidebar1"
+  "other1 other1"
+  "smart1 smart1"
+  "features1 features1"
+  "discovery1 discovery1"
+  "most1 most1"
+  "news1 news1"
+  "foot1 foot1" ;
+}
+
+.grid__section {
+  border: 1px solid #333333;
+}
+
+.grid__section-1 {
+  grid-area: head1 ;
+}
+
+.grid__section-2 {
+  grid-area: main1;
+}
+
+.grid__section-3 {
+  grid-area: sidebar1;
+}
+
+.grid__section-4 {
+  grid-area: other1 ;
+}
+
+.grid__section-5 {
+  grid-area: smart1 ;
+}
+
+.grid__section-6 {
+  grid-area: features1 ;
+}
+
+.grid__section-7 {
+  grid-area: discovery1 ;
+}
+
+.grid__section-8 {
+  grid-area: most1 ;
+}
+
+.grid__section-9 {
+  grid-area: news1 ;
+}
+
+.grid__section-10 {
+  grid-area: foot1 ;
+}
 
 /* Grid Section 1 - Flex Styles */
+.flex-container-1{
+  display: flex;
+  height: 85px;
+}
 
+.flex__item{
+  display: flex;
+  height: inherit;
+}
 
+.flex__item-1,
+.flex__item-2,
+.flex__item-3{
+  flex-grow: 2;
+}
+
+.flex__item-4,
+.flex__item-5{
+  flex-grow: 1;
+}
 
 /* Grid Section 2 - Nested Grid Styles */
 
